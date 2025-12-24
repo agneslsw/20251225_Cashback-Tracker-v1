@@ -2,10 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import { Tab, Card, Transaction, Promotion, RebateConfig, OneTimePromo } from './types';
 import { ICONS, DEFAULT_MERCHANT_TYPES } from './constants';
-import TransactionTab from './components/TransactionTab';
-import SummaryTab from './components/SummaryTab';
-import PromotionTab from './components/PromotionTab';
-import SettingsTab from './components/SettingsTab';
+import TransactionTab from './TransactionTab';
+import SummaryTab from './SummaryTab';
+import PromotionTab from './PromotionTab';
+import SettingsTab from './SettingsTab';
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<Tab>(Tab.Transactions);
