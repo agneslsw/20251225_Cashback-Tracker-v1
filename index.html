@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Kakeibo Cashback</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fallback to Inter if Aptos is not available locally -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        /* Minimalist Japanese Palette */
+        --bg-color: #fcfbf7;
+        --card-bg: #ffffff;
+        --text-primary: #2d2d2d;
+        --text-secondary: #717171;
+        --accent: #b4a088;
+        --border: #e8e6e1;
+      }
+      body {
+        font-family: 'Aptos', 'Inter', system-ui, -apple-system, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-primary);
+        font-size: 14px; /* Smaller font as requested */
+        -webkit-tap-highlight-color: transparent;
+      }
+      .minimal-shadow {
+        box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      input, select, textarea {
+        font-size: 14px !important;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
